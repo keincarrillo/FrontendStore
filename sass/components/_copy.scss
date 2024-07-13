@@ -1,0 +1,9 @@
+@use '../abstracts/colors' as c;
+
+.footer {
+    background-color: c.$dark-primary;
+    &__copy {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
