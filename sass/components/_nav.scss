@@ -1,0 +1,17 @@
+@use '../abstracts/colors' as c;
+
+.nav {
+    background-color: c.$dark-primary;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100vw;
+    &__link {
+        color: c.$white;
+        font-size: 3rem;
+        &:hover, &--active {
+            color: c.$secondary;
+        }
+    }
+}

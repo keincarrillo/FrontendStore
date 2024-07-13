@@ -56,4 +56,30 @@ h3 {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 3rem 0;
+}
+
+.nav {
+  background-color: #89119d;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100vw;
+}
+.nav__link {
+  color: #fff;
+  font-size: 3rem;
+}
+.nav__link:hover, .nav__link--active {
+  color: #ffce00;
+}
+
 /*# sourceMappingURL=styles.css.map */
