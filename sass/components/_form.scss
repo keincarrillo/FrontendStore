@@ -1,0 +1,36 @@
+@use '../abstracts/colors' as c;
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    &__opc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    &__field {
+        border: 1rem solid c.$dark-primary;
+        background-color: transparent;
+        color: c.$white;
+        font-size: 2rem;
+        padding: 1rem;
+        appearance: none;
+        width: 100%;
+        & option {
+            background-color: c.$option;
+        }
+    }
+    &__submit {
+        background-color: c.$secondary;
+        font-size: 2rem;
+        padding: 2rem;
+        transition: background-color .3s ease;
+        width: 100%;
+        &:hover {
+            cursor: pointer;
+            background-color: c.$dark-secondary;
+        }
+    }
+    
+}

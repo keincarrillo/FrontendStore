@@ -51,6 +51,10 @@ h3 {
   font-size: 2.4;
 }
 
+input {
+  border: none;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -171,6 +175,59 @@ main h1 {
 @media (min-width: 768px) {
   .our {
     flex-direction: row;
+  }
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.form__opc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.form__field {
+  border: 1rem solid #89119d;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  appearance: none;
+  width: 100%;
+}
+.form__field option {
+  background-color: rgba(137, 17, 157, 0.6);
+}
+.form__submit {
+  background-color: #ffce00;
+  font-size: 2rem;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.form__submit:hover {
+  cursor: pointer;
+  background-color: rgb(233, 187, 2);
+}
+
+.shirt {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  padding: 1rem;
+}
+.shirt__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .shirt {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

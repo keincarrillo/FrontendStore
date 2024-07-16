@@ -1,0 +1,19 @@
+.shirt {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding: 1rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .shirt {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
