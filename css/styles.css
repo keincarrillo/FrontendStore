@@ -156,11 +156,22 @@ main h1 {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .benefits {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .our {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
   gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .our {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
